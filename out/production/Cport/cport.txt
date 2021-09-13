@@ -1,0 +1,37 @@
+inicio "Taboada"
+
+  declare $numero
+
+  declare $resultado
+
+  declare $i
+
+  leiaTeclado $numero
+
+  conte em $i de 1 ate 10
+
+       $resultado = $i * $numero
+
+       escreva $i 
+
+       escreva " x "
+
+       escreva $numero
+
+       escreva " = "
+
+       escreva $resultado
+
+       novalinha
+
+  fimconte
+
+  se $numero > 10
+
+     escreva "Numero maior que o da tabuada"
+
+  fimse
+
+fim
+
+
