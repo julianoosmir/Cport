@@ -27,20 +27,17 @@ public class Cport {
             }
         });
 
+     Stream<String> valido = variaveis.stream().filter(e-> tokens.contains(e));
 
-        tokens.forEach(token -> validar(token,variaveis));
+     Stream<String> invalido = variaveis.stream().filter(e-> !tokens.contains(e));
 
-    }
+     valido.forEach(variavel-> System.out.println("variavel valida: " + variavel));
 
+     invalido.forEach(variavel-> System.out.println("variavel invalido: " + variavel));
 
-    static void validar(String tokens, List<String> palavras) {
-        for (String variavel : palavras) {
-            if (variavel.contains(tokens)) {
-                System.out.println("tem no dicionario : " + variavel);
-            }
-        }
 
 
     }
+
 
 }

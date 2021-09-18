@@ -28,7 +28,7 @@ inicio "Taboada"
 
   se $numero > 10
 
-     escreva "Numero maior que o da tabuada"
+     escreva " numero maior que o da Tabuada "
 
   fimse
 
